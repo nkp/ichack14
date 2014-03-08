@@ -9,11 +9,13 @@ import java.net.URL;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+//todo exceptions
+
 public class ZooplaRequest {
 
-	public String getJSONString(String url) throws Exception {
+	public static JSONObject getJSON(String url) throws Exception {
 
-		URL obj = new URL(url); // todo exceptions
+		URL obj = new URL(url);
 		HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 		String inputLine;
 		StringBuffer response = new StringBuffer();
@@ -21,7 +23,9 @@ public class ZooplaRequest {
 
 		con.setRequestMethod("GET");
 		con.setRequestProperty("User-Agent", "Mozilla/5.0");
-		//int responseCode = con.getResponseCode();
+
+		// int responseCode = con.getResponseCode();
+
 		in = new BufferedReader(new InputStreamReader(con.getInputStream()));
 
 		while ((inputLine = in.readLine()) != null) {
@@ -29,17 +33,6 @@ public class ZooplaRequest {
 		}
 		in.close();
 
-		return response.toString();
+		return new JSONObject(response.toString());
 	}
-
-	public JSONObject getJSONObject(String json) throws JSONException {
-
-		JSONObject object = new JSONObject(json); // todo exception
-
-		return object;
-
-	}
-	
-	
-
 }
