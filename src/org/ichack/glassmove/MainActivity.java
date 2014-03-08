@@ -1,7 +1,6 @@
 package org.ichack.glassmove;
 
 import org.ichack.glassmove.R;
-
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
