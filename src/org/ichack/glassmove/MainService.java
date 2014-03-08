@@ -1,5 +1,8 @@
 package org.ichack.glassmove;
 
+import com.google.android.glass.timeline.TimelineManager;
+import org.ichack.glassmove.R;
+
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
