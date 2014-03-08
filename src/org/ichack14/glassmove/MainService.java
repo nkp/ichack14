@@ -1,7 +1,9 @@
-package com.isabel.helloworld;
+package org.ichack14.glassmove;
 
 import com.google.android.glass.timeline.LiveCard;
 import com.google.android.glass.timeline.TimelineManager;
+import com.isabel.helloworld.R;
+
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;

@@ -1,4 +1,6 @@
-package com.isabel.helloworld;
+package org.ichack14.glassmove;
+
+import com.isabel.helloworld.R;
 
 import android.app.Activity;
 import android.content.ComponentName;
