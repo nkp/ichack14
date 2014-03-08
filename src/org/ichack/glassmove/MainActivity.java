@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.view.Menu;
 import android.view.MenuItem;
+import org.ichack.glassmove.cards.CardScrollActivity;
 
 /**
  * Based on Google Glass Sample - Compass and StopWatch
@@ -81,9 +82,11 @@ public class MainActivity extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.read_aloud:
-            	mService.sayHiLoudly();
+            	//mService.sayHiLoudly();
+              CardScrollActivity csa = new CardScrollActivity();
+
             	finish();
-                return true;
+              return true;
             case R.id.stop:
                 stopService(new Intent(this, MainService.class));
                 finish();
