@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">ichak14</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">HelloWorld</string>
+    <string name="hello">Hi I am Google Glass</string>
+    <string name="show_helloworld_voice_trigger">Hello World</string>
+    <string name="read_aloud">Say Hi</string>
+    <string name="stop">stop app</string>
 
 </resources>
