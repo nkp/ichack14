@@ -19,5 +19,24 @@ public class MenuActivity extends Activity {
     getMenuInflater().inflate(R.menu.main, menu);
     return true;
   }
+  
+  @Override
+  public void onAttachedToWindow() {
+    super.onAttachedToWindow();
+    openOptionsMenu();
+  }
 
+  @Override
+  public void onOptionsMenuClosed(Menu menu) {
+    // Nothing else to do, closing the activity.
+    finish();
+  }
+  
+  
+  @Override
+  public void onDestroy() {
+    super.onDestroy();
+    finish();
+  }
+  
 }
