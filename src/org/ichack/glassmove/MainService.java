@@ -1,4 +1,4 @@
-package org.ichack14.glassmove;
+package org.ichack.glassmove;
 
 import com.google.android.glass.timeline.LiveCard;
 import com.google.android.glass.timeline.TimelineManager;
