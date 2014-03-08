@@ -1,7 +1,5 @@
 package org.ichack.glassmove;
 
-<<<<<<< HEAD
-import com.google.android.glass.timeline.LiveCard;
 import com.google.android.glass.timeline.TimelineManager;
 import org.ichack.glassmove.R;
 
